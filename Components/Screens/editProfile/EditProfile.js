@@ -24,7 +24,7 @@ const EditProfile = ({ navigation }) => {
     }else{
     const data = [name , weight , dob , email];
     dispatch(storeData(data))
-    navigation.navigate('Profile')
+    navigation.navigate('ButtomTab')
     }
   }
    return (
@@ -77,7 +77,7 @@ const EditProfile = ({ navigation }) => {
                 start={{x: 0, y: 0}} end={{x: 1, y: 0}}
                 >
                 <TouchableOpacity onPress={handleUpdate}>
-                <Text style={style.buttonText}>Update Now</Text>
+                <Text style={style.buttonText}>SAVE NOW</Text>
                 </TouchableOpacity>
                 </LinearGradient>
                 {/* <Text style={style.forget}>Forget Password</Text> */}
