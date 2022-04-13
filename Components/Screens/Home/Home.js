@@ -196,7 +196,7 @@ const Home = ({ navigation }) => {
       <View style={{width: '90%', height: height/100*40, alignSelf:'center', top: '10%', marginBottom: '20%'}}>
 
               <ScrollView horizontal={true} showsHorizontalScrollIndicator={false}>
-                <TouchableOpacity onPress={()=> navigation.navigate('WeightStrech')}>
+                <TouchableOpacity onPress={()=> navigation.navigate('WeightStrech')} activeOpacity={0.9}>
               <View style={{top:'2%'}}>
               <ImageBackground source={require('../../Images/Image1.jpeg')} style={style.tinyLogo} imageStyle={{ borderRadius: 10}} >
               <Text style={{color:'black', fontSize: 23, top: '100%', left: '2%', fontFamily: 'Roboto-Regular'}}>Full Body Strech</Text> 
@@ -206,7 +206,7 @@ const Home = ({ navigation }) => {
               </View>
               </TouchableOpacity>
               
-              <TouchableOpacity onPress={()=> navigation.navigate('IntervalPilates')}>
+              <TouchableOpacity onPress={()=> navigation.navigate('IntervalPilates')} activeOpacity={0.9}>
               <View style={{top:'2%'}}>
               <ImageBackground source={require('../../Images/Image6.jpg')} style={style.tinyLogo} imageStyle={{ borderRadius: 10}} >
               <Text style={{color:'black', fontSize: 23, top: '100%', left: '2%', fontFamily: 'Fredoka-Regular'}}>Interval Pilates</Text> 
@@ -214,7 +214,7 @@ const Home = ({ navigation }) => {
               </ImageBackground>
               </View>
               </TouchableOpacity>
-              <TouchableOpacity onPress={()=> navigation.navigate('Tabata')}>
+              <TouchableOpacity onPress={()=> navigation.navigate('Tabata')} activeOpacity={0.9}>
               <View style={{top:'2%'}}>
               <ImageBackground source={require('../../Images/Image4_1.jpeg')} style={style.tinyLogo} imageStyle={{ borderRadius: 10}} >
               <Text style={{color:'black', fontSize: 23, top: '100%', left: '2%', fontFamily: 'Fredoka-Regular'}}>Express Tabata</Text> 
@@ -222,7 +222,7 @@ const Home = ({ navigation }) => {
               </ImageBackground>
               </View>
               </TouchableOpacity>
-              <TouchableOpacity onPress={()=> navigation.navigate('BodyFast')}>
+              <TouchableOpacity onPress={()=> navigation.navigate('BodyFast')} activeOpacity={0.9}>
               <View style={{top:'2%'}}>
               <ImageBackground source={require('../../Images/image2.jpeg')} style={style.tinyLogo} imageStyle={{ borderRadius: 10}} >
               <Text style={{color:'black', fontSize: 23, top: '100%', left: '2%', fontFamily: 'Fredoka-Regular'}}>Full Body Fast</Text> 

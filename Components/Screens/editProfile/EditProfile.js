@@ -72,14 +72,15 @@ const EditProfile = ({ navigation }) => {
   
         />
         
-       
+        <TouchableOpacity onPress={handleUpdate}>
                 <LinearGradient colors={['#774fbf', '#522ea9']}  style={style.buttonView}
                 start={{x: 0, y: 0}} end={{x: 1, y: 0}}
                 >
-                <TouchableOpacity onPress={handleUpdate}>
+               
                 <Text style={style.buttonText}>SAVE NOW</Text>
-                </TouchableOpacity>
+                
                 </LinearGradient>
+                </TouchableOpacity>
                 {/* <Text style={style.forget}>Forget Password</Text> */}
        
 {/*         

@@ -42,7 +42,7 @@ const Activity = ({navigation}) => {
       </View> */}
         {/* Diets Section */}
         <ScrollView>
-        <TouchableOpacity style={Style.setImage} onPress={handleDiets}>
+        <TouchableOpacity style={Style.setImage} onPress={()=> navigation.navigate('DietScreen')}>
         <ImageBackground  source={require('../../Images/img2.jpg')} style={Style.img}> 
         <View style={Style.txtBack}>
         <Text style={Style.setTxt}>7 Days Weight Loss Diet</Text>

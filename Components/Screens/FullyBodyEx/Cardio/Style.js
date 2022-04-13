@@ -19,7 +19,9 @@ const Style = StyleSheet.create({
     txtCon: {
         alignItems: 'center',
         height: height/100*7,
-        justifyContent: 'center'
+        justifyContent: 'space-between',
+        flexDirection:'row',
+        marginHorizontal:'2.5%'
     },
     StatusCon: {
         width: '85%',

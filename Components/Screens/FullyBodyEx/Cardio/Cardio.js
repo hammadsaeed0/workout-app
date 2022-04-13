@@ -1,15 +1,20 @@
-import { View, Text, ScrollView , Image } from 'react-native'
+import { TouchableOpacity, View, Text, ScrollView , Image } from 'react-native'
 import Icon from 'react-native-vector-icons/AntDesign';
+import ArrowIcon from 'react-native-vector-icons/AntDesign';
 import FireIcon from 'react-native-vector-icons/SimpleLineIcons';
 import HumanIcon from 'react-native-vector-icons/MaterialCommunityIcons';
 import React from 'react'
 import Style from './Style'
 
-const WeightStrech = () => {
+const WeightStrech = ({navigation}) => {
   return (
     <View style={Style.Container}>
       <View style={Style.txtCon}>
+        <TouchableOpacity onPress={()=> navigation.navigate('FullBody')}>
+        <ArrowIcon name='arrowleft' color={'black'} size={25}/>
+        </TouchableOpacity>
         <Text style={Style.setHeadTxt}>Cardio Workout</Text>
+        <Icon name='clockcircleo' color={'transparent'} size={25}/>
       </View>
 
       <View style={Style.imgCon}>

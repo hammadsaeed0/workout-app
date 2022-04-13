@@ -50,7 +50,8 @@ const style = StyleSheet.create({
         alignSelf: 'center',
         justifyContent: 'space-evenly',
         borderRadius: 10,
-        marginTop: '10%'
+        marginTop: '10%',
+        elevation:5
     },
     SectionA: {
         flexDirection: 'row',
